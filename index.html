@@ -29,6 +29,7 @@
     <section class="guidelines">
       <h2 data-i18n="guidelinesTitle">ORIENTAÇÕES IMPORTANTES</h2>
       <ul>
+        <li class="g0-item"><strong data-i18n="g0"></strong></li>
         <li data-i18n="g1"></li>
         <li data-i18n="g2"></li>
         <li data-i18n="g3"></li>
@@ -37,34 +38,6 @@
       <p class="contact">
         <span>altorendimento@rugbiabrc.org.br</span> &nbsp;/&nbsp; <span>+55 21 97135-3180</span>
       </p>
-    </section>
-
-    <!-- Instruções de uso (como preencher/assinar/enviar) -->
-    <section class="howto">
-      <button type="button" class="howto-toggle" id="howto-toggle" aria-expanded="false">
-        <span data-i18n="howtoTitle">Como preencher, assinar e enviar (toque para abrir)</span>
-        <span class="chev" aria-hidden="true">▾</span>
-      </button>
-      <div class="howto-body" id="howto-body" hidden>
-        <div class="howto-block">
-          <h3 data-i18n="howSignTitle">1. Como assinar</h3>
-          <p data-i18n="howSignText"></p>
-        </div>
-        <div class="howto-block">
-          <h3 data-i18n="howPhotoTitle">2. Como anexar as fotos</h3>
-          <p data-i18n="howPhonePhoto"></p>
-          <p data-i18n="howPcPhoto"></p>
-        </div>
-        <div class="howto-block">
-          <h3 data-i18n="howPdfTitle">3. Como salvar em PDF e localizar o arquivo</h3>
-          <p data-i18n="howPhonePdf"></p>
-          <p data-i18n="howPcPdf"></p>
-        </div>
-        <div class="howto-block">
-          <h3 data-i18n="howSendTitle">4. Como enviar</h3>
-          <p data-i18n="howSendText"></p>
-        </div>
-      </div>
     </section>
 
     <form id="report-form" novalidate>
@@ -185,6 +158,13 @@
       <section class="card">
         <h3 class="block-title" data-i18n="photosTitle">ANEXAR 2 FOTOS REFERENTES ÀS ATIVIDADES EXECUTADAS</h3>
 
+        <!-- Instruções: como anexar as fotos (sempre visíveis) -->
+        <div class="instructions">
+          <p class="instr-title" data-i18n="howPhotoTitle">Como anexar as fotos</p>
+          <p data-i18n="howPhonePhoto"></p>
+          <p data-i18n="howPcPhoto"></p>
+        </div>
+
         <div class="photos">
           <div class="photo-slot">
             <label class="photo-label" for="photo1" data-i18n="photo1">Foto 1</label>
@@ -206,6 +186,12 @@
         <!-- Assinatura -->
         <div class="signature">
           <h4 data-i18n="signatureTitle">ASSINATURA:</h4>
+
+          <!-- Instruções: como assinar (sempre visíveis) -->
+          <div class="instructions">
+            <p class="instr-title" data-i18n="howSignTitle">Como assinar</p>
+            <p data-i18n="howSignText"></p>
+          </div>
 
           <div class="sig-tabs" role="tablist">
             <button type="button" class="sig-tab active" id="tab-draw" role="tab" aria-selected="true" data-i18n="sigDraw">Desenhar assinatura</button>
@@ -232,6 +218,15 @@
 
       <!-- Ações -->
       <section class="actions">
+        <!-- Instruções: como salvar em PDF e enviar (sempre visíveis) -->
+        <div class="instructions instructions-left">
+          <p class="instr-title" data-i18n="howPdfTitle">Como salvar em PDF e localizar o arquivo</p>
+          <p data-i18n="howPhonePdf"></p>
+          <p data-i18n="howPcPdf"></p>
+          <p class="instr-title instr-title-mt" data-i18n="howSendTitle">Como enviar</p>
+          <p data-i18n="howSendText"></p>
+        </div>
+
         <button type="button" id="btn-pdf" class="btn-primary" data-i18n="generatePdf">Gerar PDF</button>
         <p class="actions-hint" data-i18n="generatePdfHint"></p>
       </section>

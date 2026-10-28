@@ -9,22 +9,22 @@ window.I18N = {
     reportTitle: "RELATÓRIO MENSAL",
 
     guidelinesTitle: "ORIENTAÇÕES IMPORTANTES",
+    g0: "Escolha o idioma do formulário (Português ou English) nos botões no topo da página.",
     g1: "O profissional deve datar e assinar a última página do relatório.",
     g2: "Prazo de entrega do relatório: até 4 dias úteis antes do último dia do mês.",
     g3: "Datar esse documento sempre com o último dia útil do mês.",
     g4: "Este relatório deve ser entregue exclusivamente para o Coordenador de Alto Rendimento pelo email ou WhatsApp:",
 
-    /* Como usar */
-    howtoTitle: "Como preencher, assinar e enviar (toque para abrir)",
-    howSignTitle: "1. Como assinar",
-    howSignText: "Você pode assinar de duas formas: (a) Desenhar — na seção ASSINATURA, escolha \"Desenhar assinatura\" e assine com o dedo (celular/tablet), com a caneta (stylus) ou com o mouse (PC) dentro do quadro. Para refazer, toque em \"Limpar\". (b) Enviar imagem — escolha \"Enviar imagem\" e envie uma foto da sua assinatura (PNG, JPG ou TIFF). No celular, você pode tirar a foto na hora; no PC, selecione o arquivo salvo.",
-    howPhotoTitle: "2. Como anexar as fotos",
+    /* Instruções por item (sempre visíveis) */
+    howSignTitle: "Como assinar",
+    howSignText: "Você pode assinar de duas formas: (a) Desenhar — escolha \"Desenhar assinatura\" e assine com o dedo (celular/tablet), com a caneta (stylus) ou com o mouse (PC) dentro do quadro. Para refazer, toque em \"Limpar\". (b) Enviar imagem — escolha \"Enviar imagem\" e envie uma foto da sua assinatura (PNG, JPG ou TIFF). No celular, você pode tirar a foto na hora; no PC, selecione o arquivo salvo.",
+    howPhotoTitle: "Como anexar as fotos",
     howPhonePhoto: "No celular/tablet: toque em \"Foto 1\" e depois em \"Foto 2\". O aparelho oferecerá tirar uma foto na hora (Câmera) ou escolher uma imagem já salva (Galeria/Arquivos). Selecione uma imagem para cada campo.",
     howPcPhoto: "No PC (Mac/Chrome): clique em \"Foto 1\" e \"Foto 2\", localize a imagem salva no computador e clique em Abrir. Uma miniatura aparecerá confirmando o anexo.",
-    howPdfTitle: "3. Como salvar em PDF e localizar o arquivo",
+    howPdfTitle: "Como salvar em PDF e localizar o arquivo",
     howPhonePdf: "No celular/tablet: toque em \"Gerar PDF\". O arquivo será baixado automaticamente. Para encontrá-lo — no iPhone: app Arquivos > Downloads (ou toque na seta de downloads do navegador); no Android: app Arquivos/Downloads, ou a notificação de download.",
     howPcPdf: "No PC (Mac/Chrome): clique em \"Gerar PDF\". O arquivo irá para a pasta Downloads (ou o Chrome perguntará onde salvar). Ele aparece também na barra de downloads do navegador, no canto inferior.",
-    howSendTitle: "4. Como enviar",
+    howSendTitle: "Como enviar",
     howSendText: "Depois de salvar o PDF, envie-o exclusivamente ao Coordenador de Alto Rendimento. • Por e-mail: anexe o PDF a uma mensagem para altorendimento@rugbiabrc.org.br. • Por WhatsApp: abra a conversa com +55 21 97135-3180, toque no clipe (📎) > Documento, escolha o PDF salvo e envie.",
 
     /* Dados */
@@ -118,21 +118,22 @@ window.I18N = {
     reportTitle: "MONTHLY REPORT",
 
     guidelinesTitle: "IMPORTANT GUIDELINES",
+    g0: "Choose the form language (Português or English) using the buttons at the top of the page.",
     g1: "The professional must date and sign the last page of the report.",
     g2: "Deadline for submitting the report: up to 4 working days before the last day of the month.",
     g3: "Always date this document to the last business day of the month.",
     g4: "This report must be delivered exclusively to the High Performance Coordinator by email or WhatsApp:",
 
-    howtoTitle: "How to fill in, sign and send (tap to open)",
-    howSignTitle: "1. How to sign",
-    howSignText: "You can sign in two ways: (a) Draw — in the SIGNATURE section, choose \"Draw signature\" and sign with your finger (phone/tablet), with a stylus, or with the mouse (PC) inside the box. To redo, tap \"Clear\". (b) Upload image — choose \"Upload image\" and send a photo of your signature (PNG, JPG or TIFF). On a phone you can take the photo on the spot; on a PC, select the saved file.",
-    howPhotoTitle: "2. How to attach the photos",
+    /* Per-item instructions (always visible) */
+    howSignTitle: "How to sign",
+    howSignText: "You can sign in two ways: (a) Draw — choose \"Draw signature\" and sign with your finger (phone/tablet), with a stylus, or with the mouse (PC) inside the box. To redo, tap \"Clear\". (b) Upload image — choose \"Upload image\" and send a photo of your signature (PNG, JPG or TIFF). On a phone you can take the photo on the spot; on a PC, select the saved file.",
+    howPhotoTitle: "How to attach the photos",
     howPhonePhoto: "On phone/tablet: tap \"Photo 1\" and then \"Photo 2\". The device will offer to take a photo now (Camera) or choose a saved image (Gallery/Files). Select one image for each field.",
     howPcPhoto: "On PC (Mac/Chrome): click \"Photo 1\" and \"Photo 2\", locate the image saved on your computer and click Open. A thumbnail will confirm the attachment.",
-    howPdfTitle: "3. How to save as PDF and find the file",
+    howPdfTitle: "How to save as PDF and find the file",
     howPhonePdf: "On phone/tablet: tap \"Generate PDF\". The file downloads automatically. To find it — on iPhone: Files app > Downloads (or tap the browser's download arrow); on Android: Files/Downloads app, or the download notification.",
     howPcPdf: "On PC (Mac/Chrome): click \"Generate PDF\". The file goes to the Downloads folder (or Chrome asks where to save). It also appears in the browser's download bar at the bottom.",
-    howSendTitle: "4. How to send",
+    howSendTitle: "How to send",
     howSendText: "After saving the PDF, send it exclusively to the High Performance Coordinator. • By email: attach the PDF to a message to altorendimento@rugbiabrc.org.br. • By WhatsApp: open the chat with +55 21 97135-3180, tap the clip (📎) > Document, choose the saved PDF and send.",
 
     name: "NAME:",

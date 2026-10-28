@@ -76,17 +76,6 @@
     });
   }
 
-  /* ---------- How-to toggle ---------- */
-  function setupHowto() {
-    var btn = document.getElementById("howto-toggle");
-    var body = document.getElementById("howto-body");
-    btn.addEventListener("click", function () {
-      var open = body.hidden;
-      body.hidden = !open;
-      btn.setAttribute("aria-expanded", String(open));
-    });
-  }
-
   /* ---------- Fotos ---------- */
   function setupPhoto(inputId, previewId, stateKey) {
     var input = document.getElementById(inputId);
@@ -506,7 +495,6 @@
 
     initLang();
     setupConditionals();
-    setupHowto();
     setupPhoto("photo1", "preview1", "photo1");
     setupPhoto("photo2", "preview2", "photo2");
     setupSignatureCanvas();
