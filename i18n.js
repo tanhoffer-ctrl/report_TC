@@ -84,6 +84,7 @@ window.I18N = {
     photosTitle: "ANEXAR 2 FOTOS REFERENTES ÀS ATIVIDADES EXECUTADAS",
     photo1: "Foto 1",
     photo2: "Foto 2",
+    fullName: "NOME COMPLETO:",
     dateLabel: "DATA (último dia útil do mês):",
 
     signatureTitle: "ASSINATURA:",
@@ -192,6 +193,7 @@ window.I18N = {
     photosTitle: "ATTACH 2 PHOTOS REFERRING TO THE ACTIVITIES PERFORMED",
     photo1: "Photo 1",
     photo2: "Photo 2",
+    fullName: "FULL NAME:",
     dateLabel: "DATE (last working day of the month):",
 
     signatureTitle: "SIGNATURE:",

@@ -397,6 +397,14 @@
 
     divider();
 
+    // Nome completo
+    doc.setFont("helvetica", "bold"); doc.setFontSize(11);
+    ensureSpace(20);
+    doc.text(t("fullName") + " ", margin, y);
+    doc.setFont("helvetica", "normal");
+    doc.text(val("f-fullname") || "-", margin + doc.getTextWidth(t("fullName") + "  "), y);
+    y += 22;
+
     // Data
     doc.setFont("helvetica", "bold"); doc.setFontSize(11);
     ensureSpace(20);
