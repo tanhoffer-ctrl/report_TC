@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Relatório Mensal — ABRC | Monthly Report</title>
+<meta name="description" content="Formulário de relatório mensal — Associação Brasileira de Rugby em Cadeira de Rodas / Monthly report form — Brazilian Wheelchair Rugby Association" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Barra de idioma -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <strong data-i18n="org1">ASSOCIAÇÃO BRASILEIRA DE RUGBY EM CADEIRA DE RODAS</strong>
+        <span data-i18n="org2">PROGRAMA NACIONAL DE RUGBY EM CADEIRA DE RODAS</span>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" id="btn-pt" class="lang-btn active" aria-pressed="true">Português</button>
+        <button type="button" id="btn-en" class="lang-btn" aria-pressed="false">English</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="report-title" data-i18n="reportTitle">RELATÓRIO MENSAL</h1>
+
+    <!-- Orientações importantes -->
+    <section class="guidelines">
+      <h2 data-i18n="guidelinesTitle">ORIENTAÇÕES IMPORTANTES</h2>
+      <ul>
+        <li data-i18n="g1"></li>
+        <li data-i18n="g2"></li>
+        <li data-i18n="g3"></li>
+        <li data-i18n="g4"></li>
+      </ul>
+      <p class="contact">
+        <span>altorendimento@rugbiabrc.org.br</span> &nbsp;/&nbsp; <span>+55 21 97135-3180</span>
+      </p>
+    </section>
+
+    <!-- Instruções de uso (como preencher/assinar/enviar) -->
+    <section class="howto">
+      <button type="button" class="howto-toggle" id="howto-toggle" aria-expanded="false">
+        <span data-i18n="howtoTitle">Como preencher, assinar e enviar (toque para abrir)</span>
+        <span class="chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="howto-body" id="howto-body" hidden>
+        <div class="howto-block">
+          <h3 data-i18n="howSignTitle">1. Como assinar</h3>
+          <p data-i18n="howSignText"></p>
+        </div>
+        <div class="howto-block">
+          <h3 data-i18n="howPhotoTitle">2. Como anexar as fotos</h3>
+          <p data-i18n="howPhonePhoto"></p>
+          <p data-i18n="howPcPhoto"></p>
+        </div>
+        <div class="howto-block">
+          <h3 data-i18n="howPdfTitle">3. Como salvar em PDF e localizar o arquivo</h3>
+          <p data-i18n="howPhonePdf"></p>
+          <p data-i18n="howPcPdf"></p>
+        </div>
+        <div class="howto-block">
+          <h3 data-i18n="howSendTitle">4. Como enviar</h3>
+          <p data-i18n="howSendText"></p>
+        </div>
+      </div>
+    </section>
+
+    <form id="report-form" novalidate>
+      <!-- Dados do profissional -->
+      <section class="card">
+        <div class="field">
+          <label for="f-name" data-i18n="name">NOME:</label>
+          <input type="text" id="f-name" name="name" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="f-function" data-i18n="function">FUNÇÃO:</label>
+          <input type="text" id="f-function" name="function" />
+        </div>
+        <div class="field">
+          <label for="f-month" data-i18n="refMonth">MÊS DE REFERÊNCIA:</label>
+          <input type="text" id="f-month" name="refMonth" data-i18n-ph="refMonthPh" />
+        </div>
+      </section>
+
+      <!-- ===================== SEÇÃO I ===================== -->
+      <h2 class="section-title" data-i18n="sectionI">SEÇÃO I</h2>
+
+      <!-- 1. Semana de treinamento -->
+      <section class="card">
+        <h3 class="block-title"><span class="num">1</span> <span data-i18n="s1_title">SEMANA DE TREINAMENTO</span></h3>
+        <p class="block-note" data-i18n="s1_note"></p>
+
+        <div class="field">
+          <label for="q1_1" data-i18n="q1_1"></label>
+          <div class="yesno" data-controls="s1-conditional">
+            <label class="radio"><input type="radio" name="q1_1" value="yesno-yes" /> <span data-i18n="yes">Sim</span></label>
+            <label class="radio"><input type="radio" name="q1_1" value="yesno-no" /> <span data-i18n="no">Não</span></label>
+          </div>
+        </div>
+
+        <div class="conditional" id="s1-conditional" hidden>
+          <p class="cond-hint" data-i18n="ifYes"></p>
+          <div class="field"><label for="q1_2" data-i18n="q1_2"></label><textarea id="q1_2" name="q1_2" rows="2"></textarea></div>
+          <div class="field"><label for="q1_3" data-i18n="q1_3"></label><p class="help" data-i18n="q1_3_help"></p><textarea id="q1_3" name="q1_3" rows="3"></textarea></div>
+          <div class="field"><label for="q1_4" data-i18n="q1_4"></label><textarea id="q1_4" name="q1_4" rows="3"></textarea></div>
+          <div class="field">
+            <label data-i18n="q1_5"></label>
+            <div class="yesno">
+              <label class="radio"><input type="radio" name="q1_5" value="yesno-yes" /> <span data-i18n="yes">Sim</span></label>
+              <label class="radio"><input type="radio" name="q1_5" value="yesno-no" /> <span data-i18n="no">Não</span></label>
+            </div>
+          </div>
+          <div class="field"><label for="q1_6" data-i18n="q1_6"></label><textarea id="q1_6" name="q1_6" rows="3"></textarea></div>
+          <div class="field"><label for="q1_7" data-i18n="q1_7"></label><textarea id="q1_7" name="q1_7" rows="3"></textarea></div>
+        </div>
+      </section>
+
+      <!-- 2. Torneios ou campeonatos -->
+      <section class="card">
+        <h3 class="block-title"><span class="num">2</span> <span data-i18n="s2_title">TORNEIOS OU CAMPEONATOS (NACIONAIS OU INTERNACIONAIS)</span></h3>
+        <p class="block-note" data-i18n="s2_note"></p>
+
+        <div class="field">
+          <label data-i18n="q2_1"></label>
+          <div class="yesno" data-controls="s2-conditional">
+            <label class="radio"><input type="radio" name="q2_1" value="yesno-yes" /> <span data-i18n="yes">Sim</span></label>
+            <label class="radio"><input type="radio" name="q2_1" value="yesno-no" /> <span data-i18n="no">Não</span></label>
+          </div>
+        </div>
+
+        <div class="conditional" id="s2-conditional" hidden>
+          <p class="cond-hint" data-i18n="ifYes"></p>
+          <div class="field"><label for="q2_2" data-i18n="q2_2"></label><textarea id="q2_2" name="q2_2" rows="2"></textarea></div>
+          <div class="field"><label for="q2_3" data-i18n="q2_3"></label><textarea id="q2_3" name="q2_3" rows="2"></textarea></div>
+          <div class="field"><label for="q2_4" data-i18n="q2_4"></label><p class="help" data-i18n="q2_4_help"></p><textarea id="q2_4" name="q2_4" rows="3"></textarea></div>
+          <div class="field">
+            <label data-i18n="q2_5"></label>
+            <div class="yesno">
+              <label class="radio"><input type="radio" name="q2_5" value="yesno-yes" /> <span data-i18n="yes">Sim</span></label>
+              <label class="radio"><input type="radio" name="q2_5" value="yesno-no" /> <span data-i18n="no">Não</span></label>
+            </div>
+          </div>
+          <div class="field"><label for="q2_6" data-i18n="q2_6"></label><textarea id="q2_6" name="q2_6" rows="3"></textarea></div>
+        </div>
+      </section>
+
+      <!-- 3. Atividades remotas -->
+      <section class="card">
+        <h3 class="block-title"><span class="num">3</span> <span data-i18n="s3_title">ATIVIDADES REMOTAS</span></h3>
+        <p class="block-note" data-i18n="s3_note"></p>
+        <div class="field"><label for="q3_1" data-i18n="q3_1"></label><textarea id="q3_1" name="q3_1" rows="3"></textarea></div>
+        <div class="field"><label for="q3_2" data-i18n="q3_2"></label><textarea id="q3_2" name="q3_2" rows="3"></textarea></div>
+      </section>
+
+      <!-- ===================== SEÇÃO II ===================== -->
+      <h2 class="section-title" data-i18n="sectionII">SEÇÃO II</h2>
+
+      <section class="card">
+        <h3 class="block-title"><span class="num">1</span> <span data-i18n="s2b_title">PROFISSIONAIS ESPECIALISTAS</span></h3>
+        <p class="block-note" data-i18n="s2b_note"></p>
+
+        <div class="field"><label for="p1_1" data-i18n="p1_1"></label><textarea id="p1_1" name="p1_1" rows="2"></textarea></div>
+        <div class="field"><label for="p1_2" data-i18n="p1_2"></label><p class="help" data-i18n="p1_2_help"></p><textarea id="p1_2" name="p1_2" rows="3"></textarea></div>
+        <div class="field"><label for="p1_3" data-i18n="p1_3"></label><p class="help" data-i18n="p1_3_help"></p><textarea id="p1_3" name="p1_3" rows="2"></textarea></div>
+        <div class="field"><label for="p1_4" data-i18n="p1_4"></label><textarea id="p1_4" name="p1_4" rows="3"></textarea></div>
+        <div class="field"><label for="p1_5" data-i18n="p1_5"></label><textarea id="p1_5" name="p1_5" rows="2"></textarea></div>
+        <div class="field"><label for="p1_6" data-i18n="p1_6"></label><textarea id="p1_6" name="p1_6" rows="3"></textarea></div>
+        <div class="field"><label for="p1_7" data-i18n="p1_7"></label><textarea id="p1_7" name="p1_7" rows="2"></textarea></div>
+        <div class="field"><label for="p1_8" data-i18n="p1_8"></label><textarea id="p1_8" name="p1_8" rows="3"></textarea></div>
+        <div class="field"><label for="p1_9" data-i18n="p1_9"></label><p class="help" data-i18n="p1_9_help"></p><textarea id="p1_9" name="p1_9" rows="3"></textarea></div>
+
+        <!-- Item 1.10 DESTACADO -->
+        <div class="callout">
+          <span class="callout-tag" data-i18n="itemTag">ITEM 1.10</span>
+          <p class="callout-text" data-i18n="p1_10"></p>
+        </div>
+        <div class="field"><label for="p1_10_comment" data-i18n="p1_10_label"></label><textarea id="p1_10_comment" name="p1_10_comment" rows="2"></textarea></div>
+      </section>
+
+      <!-- ===================== SEÇÃO III ===================== -->
+      <h2 class="section-title" data-i18n="sectionIII">SEÇÃO III</h2>
+
+      <section class="card">
+        <h3 class="block-title" data-i18n="photosTitle">ANEXAR 2 FOTOS REFERENTES ÀS ATIVIDADES EXECUTADAS</h3>
+
+        <div class="photos">
+          <div class="photo-slot">
+            <label class="photo-label" for="photo1" data-i18n="photo1">Foto 1</label>
+            <input type="file" id="photo1" accept="image/*" />
+            <div class="photo-preview" id="preview1" aria-live="polite"></div>
+          </div>
+          <div class="photo-slot">
+            <label class="photo-label" for="photo2" data-i18n="photo2">Foto 2</label>
+            <input type="file" id="photo2" accept="image/*" />
+            <div class="photo-preview" id="preview2" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <div class="field date-field">
+          <label for="f-date" data-i18n="dateLabel">DATA (último dia útil do mês):</label>
+          <input type="date" id="f-date" name="date" />
+        </div>
+
+        <!-- Assinatura -->
+        <div class="signature">
+          <h4 data-i18n="signatureTitle">ASSINATURA:</h4>
+
+          <div class="sig-tabs" role="tablist">
+            <button type="button" class="sig-tab active" id="tab-draw" role="tab" aria-selected="true" data-i18n="sigDraw">Desenhar assinatura</button>
+            <button type="button" class="sig-tab" id="tab-upload" role="tab" aria-selected="false" data-i18n="sigUpload">Enviar imagem</button>
+          </div>
+
+          <!-- Desenhar -->
+          <div class="sig-panel" id="panel-draw">
+            <p class="help" data-i18n="sigDrawHelp"></p>
+            <canvas id="sig-canvas" width="600" height="200" aria-label="Área de assinatura"></canvas>
+            <div class="sig-actions">
+              <button type="button" id="sig-clear" class="btn-secondary" data-i18n="sigClear">Limpar</button>
+            </div>
+          </div>
+
+          <!-- Upload -->
+          <div class="sig-panel" id="panel-upload" hidden>
+            <p class="help" data-i18n="sigUploadHelp"></p>
+            <input type="file" id="sig-file" accept="image/png,image/jpeg,image/jpg,image/tiff" />
+            <div class="photo-preview" id="sig-preview" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ações -->
+      <section class="actions">
+        <button type="button" id="btn-pdf" class="btn-primary" data-i18n="generatePdf">Gerar PDF</button>
+        <p class="actions-hint" data-i18n="generatePdfHint"></p>
+      </section>
+    </form>
+
+    <footer class="site-footer">
+      <p>ABRC — <span data-i18n="org2">PROGRAMA NACIONAL DE RUGBY EM CADEIRA DE RODAS</span></p>
+    </footer>
+  </main>
+
+  <!-- Biblioteca para gerar PDF (jsPDF via CDN, com fallback) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    // Fallback: se o primeiro CDN falhar, tenta o unpkg antes de carregar o app
+    if (!window.jspdf) {
+      document.write('<script src="https:\/\/unpkg.com\/jspdf@2.5.2\/dist\/jspdf.umd.min.js" crossorigin="anonymous"><\/script>');
+    }
+  </script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
